@@ -15,13 +15,14 @@ Running Experiments:
 
     to evaluate only: python wmseg_main.py --do_test --eval_data_path=./path/to/testdata --eval_model=./models/model_name/model.pt
 
-    For achieving results described in paper, run *python wmseg_main.py --do_train --train_data_path=./sample_data/train.tsv --eval_data_path=./sample_data/test.tsv --bert_model=bert-base-chinese --max_seq_length=300 --max_ngram_size=300 --train_batch_size=2 --eval_batch_size=2 --num_train_epochs=1 --warmup_proportion=0.1 --learning_rate=5e-5 --model_name=cwsmodel --use_memory*
-
 Segmentation on a file:
     python wmseg_main.py --do_predict --input_file=./path/to/input --output_file=./path/to/output --eval_model=./models/model_name/model.pt
-
+    
+Results: 
+    Training and Testing results on SIGHAN2005 are provided in the results folder.
+    
 Dataset files:
     Small dataset file available in /sample_data/. As they are quite small (<10kb), they are included in this repo
-    You can run the data_preprocessing.py to retrieve SIGHAN2005 datasets. These datasets were not used in the paper because they're simply too large.
+    You can run the data_preprocessing.py to retrieve SIGHAN2005 datasets and reproduce the results provided.
 
 
