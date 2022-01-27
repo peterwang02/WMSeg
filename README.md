@@ -22,7 +22,7 @@ Results:
     Training and Testing results on SIGHAN2005 are provided in the results folder.
     
 Dataset files:
-    Small dataset file available in /sample_data/. As they are quite small (<10kb), they are included in this repo
+    Small dataset file available in /sample_data/. As they are quite small (<10kb), they are included in this repo.
     You can run the data_preprocessing.py to retrieve SIGHAN2005 datasets and reproduce the results provided.
 
 
