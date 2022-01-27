@@ -1,11 +1,11 @@
 # WMsegmentation
 
 INFO:
-    This is modified/extended code of the 2020ACL paper "Improving Chinese Word Segmentation with Wordhood Memory Networks". The author's implementation, which is what this code is based on, can be found here https://github.com/SVAIGBA/WMSeg. Most of the code is directly from the repository given, however, with modifications to almost every file and function. The most significant changes are: 
-    1. removed support for ZEN and SOFTMAX, the encoder-decoder combination used for all runs is BERT-CRF, this is mainly shown in wmseg_main.py, wmseg_helper.py, and wmseg_model.py; 
-    2. rewrote/extended getgram2id from wmseg_helper.py to make it produce three different wordhood measurement structures; 
-    3. heavily modifed/extended the WORDKVNN neural network module from wmseg_model.py, and corresponding changes in other functions in this file as well; 
-    4. changed reporting of results from printing directly to stdout to printing to "testEval.txt" (in wmseg_main.py).
+    This is modified/extended code of the 2020ACL paper "Improving Chinese Word Segmentation with Wordhood Memory Networks". The author's implementation, which is what this code is based on, can be found here https://github.com/SVAIGBA/WMSeg. Most of the code is directly from the repository given, however, with modifications to almost every file and function. The most significant changes are:   
+    1. removed support for ZEN and SOFTMAX, the encoder-decoder combination used for all runs is BERT-CRF, this is mainly shown in wmseg_main.py, wmseg_helper.py, and wmseg_model.py;  
+    2. rewrote/extended getgram2id from wmseg_helper.py to make it produce three different wordhood measurement structures;    
+    3. heavily modifed/extended the WORDKVNN neural network module from wmseg_model.py, and corresponding changes in other functions in this file as well;    
+    4. changed reporting of results from printing directly to stdout to printing to "testEval.txt" (in wmseg_main.py).  
     5. modified very little code in pytorch_pretrained_bert to make it compatible with the newest pytorch version
 
 Running Experiments:
